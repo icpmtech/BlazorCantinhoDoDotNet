@@ -19,6 +19,7 @@ namespace WebApplicationBlazor.Server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().AddJsonOptions(options =>
+
             {
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
             });
